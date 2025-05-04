@@ -1,0 +1,38 @@
+Prompt user for number of players
+Prompt user for starting life total
+Randomly select starting player 
+
+Display player number as h1
+Display each player's life total
+Click left side of life total tile to decrement life total
+Click right side of life total tile to increment life total 
+
+Need to denote when a player is eliminated: 
+    Life = 0,
+    Poison = 10,
+    Commander Damage = 21 from a single commander,
+    other (mill, condition, etc)
+
+Have an icon on bottom of tile that will pull up secondary tracking:
+    Need to track Poison counters 
+    Need to track commander damage and from which player 
+    dice roller (d2, d4, d6, d8, d10, d12, d20)
+
+Need to have special tracking additionaly:
+    Monarch
+    City's blessing 
+    ascend
+    number of times commander cast 
+    day/night
+    initiative
+
+Maybe as a custom field?
+    energy
+    experience 
+    treasure tokens
+
+Color picker for player backgrounds: (Also to be used for cmdr dmg )
+    <label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" value="#ff0000">
+
+maybe find a way to include the commander artwork in player's bg 
