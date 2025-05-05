@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jordan Bugglin">
+    <meta name="description" content="My take on a life tracker for Magic: the Gathering.">
+
     <link rel="stylesheet" href="style.css">
     <title>LifeKeeper</title>
 </head>
 <body>
     <main>
-        <div class="start-game">
+        <div id="start-game">
             <h1>JB's Lifetracker</h1>
             <button onclick="startGame()">
                 Start Game
             </button>
-            <div id="demo"></div>
-            <div id="life"></div>
-            <div id="startingPlayer"></div>
         </div>
+        <div id="playerDisplay"></div>
     </main>
     <script src="./actions.js"></script>
 </body>

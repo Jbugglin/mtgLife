@@ -1,24 +1,17 @@
 //Game Driver
 function startGame() {
-    getPlayers();
-    getStartingLifeTotal();
+    //Hide all starting elements on page
+    let hideIntro = document.getElementById('start-game');
+    hideIntro.style.display = 'none';
+    createPlayers();
 }
-
-//Prompt user for the number of players
-function getPlayers() {
+//WARNING: LARGE FUNCTION AHEAD!
+//Prompt user for the number of players and create the player
+function createPlayers() {
     let numOfPlayers = prompt("How many people are playing today?");
-    if (numOfPlayers != 0) {
-        document.getElementById('demo').innerHTML = "There are " + numOfPlayers + " playing today!";
-    }
-    randomStart(numOfPlayers);
-}
-
-//Prompt user for the starting life total
-function getStartingLifeTotal() {
     let startingLifeTotal = prompt("Starting Life Total: ");
-    if (startingLifeTotal != 0) {
-        document.getElementById('life').innerHTML = "Starting life is " + startingLifeTotal;
-    }
+
+    randomStart(numOfPlayers);
 }
 
 //Randomly select starting player
@@ -27,6 +20,13 @@ function randomStart(numOfPlayers) {
         let min = 1;
         let max = numOfPlayers;
         let ranStartPlayer = Math.floor(Math.random() * (max - min + 1)) + min;
-        document.getElementById('startingPlayer').innerHTML = "Starting player: " + ranStartPlayer;
+        console.log(`Random starting player: ${ranStartPlayer}`);
     }
 }
+
+//player Container 
+    //h1: Player[i]
+    //span: startingLifeTotal
+    //Button: -/+ to adjust life. 
+    //Up carrot: additional
+
